@@ -1,0 +1,181 @@
+.slider
+    position: relative
+    margin-top: 50px
+    padding-top: 60px
+    height: 512px
+    &__wrapper
+    &__item
+        position: relative
+        margin: 0 auto
+        height: 390px
+        width: 391px
+        &-avatar
+            display: none
+            position: absolute
+            z-index: 5
+            top: -60px
+            left: 50%
+            transform: translateX(-50%)
+        &-rectangle1
+            // border: 1px solid #000
+            position: absolute
+            top: 1px
+            left: 50%
+            transform: translateX(-50%)
+            display: block
+            margin: 0 auto
+            width: 730px
+            height: 390px
+            border-radius: 20px
+            background: #FFFFFF 
+            background-image: url('../img/slider_bg.svg')
+            background-position: center 13%
+            background-repeat: no-repeat
+            box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5)
+            z-index: 3
+        &-rectangle2
+            // border: 1px solid #000
+            width: 678px
+            height: 100px
+            background: #FFFFFF 
+            box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5)
+            position: absolute
+            bottom: -25px
+            left: 50%
+            transform: translateX(-50%)
+            border-radius: 20px 
+            z-index: 2
+        &-rectangle3
+            // border: 1px solid #000
+            width: 618px
+            height: 100px
+            background: #FFFFFF 
+            box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5)
+            position: absolute
+            bottom: -45px
+            left: 50%
+            transform: translateX(-50%)
+            border-radius: 20px 
+            z-index: 1
+        &-text
+            position: absolute
+            top: 100px
+            left: 50%
+            transform: translateX(-50%)
+            display: block
+            margin: 0 auto
+            width: 566px
+            font-weight: 500
+            font-size: 26.7px
+            line-height: 39px
+            text-align: center
+            color: #94A2B3
+            z-index: 3
+    &__button
+        position: relative
+        width: 565px
+        height: 30px
+        display: block
+        margin: 0 auto
+        padding-top: 42px
+        z-index: 10
+        &-wrapper
+            display: flex
+            justify-content: flex-end
+        &-prev
+            width: 51px
+            height: 25px
+            margin-right: 40px
+            outline: none
+        &-next
+            width: 51px
+            height: 25px
+            outline: none
+
+        
+.swiper-button-prev
+    display: block
+    position: relative
+    &:after
+        font-size: 0px
+        line-height: 0px
+.swiper-button-next
+    display: block
+    position: relative
+    &:after
+        font-size: 0px
+        line-height: 0px
+
+.slider__avatar
+    position: absolute
+    height: 800px
+    width: 1000px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: -5
+    &-right-top
+        position: absolute
+        top: 86px
+        right: -38px
+        &-blure
+            position: absolute
+            box-shadow: inset 0px -16px 23px rgba(255, 255, 255, 0.6)
+            filter: blur(16px)
+            z-index: -1
+            top: 5px
+    &-right-center
+        position: absolute
+        top: 318px
+        right: -221px
+        &-blure
+            position: absolute
+            box-shadow: inset 0px -16px 23px rgba(255, 255, 255, 0.6);
+            filter: blur(16px)
+            z-index: -1
+            top: 16px
+
+    &-right-bottom
+        position: absolute
+        bottom: -14px
+        right: -65px
+        &-blure
+            position: absolute
+            box-shadow: inset 0px -16px 23px rgba(255, 255, 255, 0.6);
+            filter: blur(16px)
+            z-index: -1
+            top: 16px
+
+    &-left-top
+        position: absolute
+        top: 121px
+        left: -66px
+        &-blure
+            position: absolute
+            box-shadow: inset 0px -16px 23px rgba(255, 255, 255, 0.6);
+            filter: blur(16px)
+            z-index: -1
+            top: 16px
+    &-left-center
+        position: absolute
+        top: 326px
+        left: -300px
+        &-blure
+            position: absolute
+            box-shadow: inset 0px -16px 23px rgba(255, 255, 255, 0.6);
+            filter: blur(16px)
+            z-index: -1
+            top: 16px
+    &-left-bottom
+        position: absolute
+        bottom: 33px
+        left: -184px
+        &-blure
+            position: absolute
+            box-shadow: inset 0px -16px 23px rgba(255, 255, 255, 0.6);
+            filter: blur(16px)
+            z-index: -1
+            top: 16px
+
+
+
